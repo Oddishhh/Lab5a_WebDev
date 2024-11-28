@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 5a Q1</title>
+</head>
+<body>
+    <?php 
+    
+    $name = "Nur Raudah Ezatul Binti Md Sarif";
+    $matricNumber = "AI220221";
+    $course = "Bachelor of Web Technology with Honours";
+Question 1:
+Edit the PHP file to create variables of your details and display them on the HTML table. Your details should be as follows: 
+(a)	Name 
+(b)	Matric number 
+(c)	Course 
+(d)	Year of study 
+(e)	Address
+
+Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 5a Q1</title>
+</head>
+<body>
+    <?php 
+    
+    $name = "Nur Raudah Ezatul Binti Md Sarif";
+    $matricNumber = "AI220221";
+    $course = "Bachelor of Web Technology with Honours";
+    $yearOfStudy = "Year 3";
+    $address = "Du 70 Jalan Abdul Rahman Talib, Kampung Jaya Gading, Kuantan, Pahang";
+    ?>
+    
+    <table border="1">
+        <tr>
+            <th>Details</th>
+            <th>Information</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><?php echo $name; ?></td>
+        </tr>
+        <tr>
+            <td>Matric Number</td>
+            <td><?php echo $matricNumber; ?></td>
+        </tr>
+        <tr>
+            <td>Course</td>
+            <td><?php echo $course; ?></td>
+        </tr>
+        <tr>
+            <td>Year of Study</td>
+            <td><?php echo $yearOfStudy; ?></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><?php echo $address; ?></td>
+        </tr>
+    </table>
+</body>
+</html>
