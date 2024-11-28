@@ -1,0 +1,39 @@
+<?php
+// Create the associative array
+$students = [
+    [
+        'name' => 'Alice',
+        'program' => 'BIP',
+        'age' => 21
+    ],
+    [
+        'name' => 'Bob',
+        'program' => 'BIS',
+        'age' => 20
+    ],
+    [
+        'name' => 'Raju',
+        'program' => 'BIT',
+        'age' => 22
+    ]
+];
+
+// Create the HTML table with smaller cells
+echo '<table border="1" style="border-collapse: collapse; text-align: center; width: 30%; font-size: 12px;">';
+echo '<tr>
+        <th style="border: 1px solid black; padding: 5px;">Name</th>
+        <th style="border: 1px solid black; padding: 5px;">Program</th>
+        <th style="border: 1px solid black; padding: 5px;">Age</th>
+      </tr>';
+
+// Use foreach loop to iterate through the students array and display the data in the table
+foreach ($students as $student) {
+    echo '<tr>';
+    echo '<td style="border: 1px solid black; padding: 5px;">' . $student['name'] . '</td>';
+    echo '<td style="border: 1px solid black; padding: 5px;">' . $student['program'] . '</td>';
+    echo '<td style="border: 1px solid black; padding: 5px;">' . $student['age'] . '</td>';
+    echo '</tr>';
+}
+
+echo '</table>';
+?>
